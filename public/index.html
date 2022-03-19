@@ -5,36 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <title>Inicio</title>
-    
+
 </head>
 
 <body>
-
-    <h1>Login</h1>
     <br />
-    <div>
-        <label for="usuario">Usuario</label><br>
-        <input type="text" name="usuario" id="usuario" class="field" required /><br />
+    <div class="container">
+        <div class="login">
+            <div class="login-header">
+                <h1>Login</h1>
+            </div>
+            <div class="login-form">
+                <h3> <label for="usuario">Usuario</label><br></h3>
+                <input type="text" name="usuario" id="usuario" class="field" required /><br />
 
-        <label for="clave">Clave</label><br>
-        <input type="text" name="clave" id="clave" class="field" required /><br />
+                <h3> <label for="clave">Clave</label><br></h3>
+                <input type="text" name="clave" id="clave" class="field" required /><br />
 
-        <button style="margin: 10px 0;" onclick="login()">
-            Ingresar
-        </button>
-        <br>
-        <br>
-        <label hidden="true" id="label"></label>
-        <br>
+                <input type="button" class="login-button" onclick="login()" value="Ingresar">
+
+                </button>
+            </div>
+            <br>
+            <br>
+            <h4><label hidden="true" id="label"></label></h4>
+            <br>
+            <br>
+            <h5 id="lista" hidden="true"><a href="lista.html">Ver lista de usuarios</a></h5>
+        </div>
+
     </div>
 
-
-
     <script src="js/login.js"></script>
-    <br>
-    <li id="lista" hidden="true"><a href="lista.html">Ver lista de usuarios</a></li>
+
 </body>
 
 </html>

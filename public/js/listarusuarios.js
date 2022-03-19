@@ -20,8 +20,8 @@ contenido.innerHTML = "";
             <td>${dato.bloqueado}</td>
             <td>${dato.apellido}</td>
             <td>${dato.nombre}</td>
-            <td><button type="button" class="btn btn-red" onclick="bloquear(${dato.id},'Y')">Bloquear</button></td>
-            <td><button type="button" class="btn btn-red" onclick="bloquear(${dato.id},'N')">Desbloquear</button></td>           
+            <td><button type="button" class="btn btn-red" onclick="bloquear(${dato.id},'Y')"><img src='./images/lock.jpg' width="50px"></button></td>
+            <td><button type="button" class="btn btn-red" onclick="bloquear(${dato.id},'N')"><img src='./images/unlock.jpg' width="50px"></button></td>           
         </tr>
         `
     }
