@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lista de Usuarios</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Usuarios</h1>
+        <input type="text" name="busqueda" id="busqueda" class="field" placeholder="buscarUsuario"/>
+        <button onclick="buscar()" class="btn btn-orange">
+            Buscar
+        </button>
+        <button onclick="obtener()" class="btn btn-orange">
+            Mostrar todos
+        </button>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Usuario</th>
+                    <th>Bloqueado</th>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+
+                </tr>
+            </thead>
+            <tbody id="contenido"></tbody>
+        </table>
+    </div>
+    <script src="js/listarusuarios.js"></script>
+    <script src="js/bloquearusuario.js"></script>
+    <br>
+    <hr>
+
+</body>
+
+</html>
