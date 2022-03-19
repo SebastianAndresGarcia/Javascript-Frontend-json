@@ -2,7 +2,7 @@
     .container {
       margin: 50px auto;
       width: 1200px;
-      
+      margin-left: auto;
     }
     table {
       text-align:left;
@@ -15,31 +15,39 @@
     
     th,
     td {
+      
       padding: 8px;
       font-family: Arial, Helvetica, sans-serif;
       transition: .2s;
-    
+      color:black;
     }
     
     thead {
-      background-color: #e28539;
+      background-color: #f1c49e; 
       color: white;
-      border-bottom: solid 3px #915303;
+      border-bottom: solid 2px #270600;
     }
     
-    tr:nth-child(even) {
+   /* tr:nth-child(even) {
       background-color: #ddd;
-    }
+    } */
     
     tr:hover td {
-      background-color: #e79259;
-      color: white;
+    background-color: #fdffff;
+    color: rgb(5, 4, 4);
+    }
+  .bodylista {
+      background:rgb(251, 253, 253);
+      margin:0px;
+      font-family: 'Ubuntu', sans-serif;
+      background-size: 100% 110%;
+      margin-left: auto;
     }
   body {
-    background:rgb(255, 255, 254);
+    background:rgb(165, 246, 252);
     margin:0px;
     font-family: 'Ubuntu', sans-serif;
-      background-size: 100% 110%;
+    background-size: 100% 110%;
   }
   h1, h2, h3, h4, h5, h6, a {
     margin:0; padding:0;
@@ -53,7 +61,7 @@
   .login-header {
     color:rgb(5, 44, 95);
     text-align:center;
-    font-size:200%;
+    font-size:100%;
   }
   /* .login-header h1 {
      text-shadow: 0px 5px 15px #000; 
@@ -62,7 +70,7 @@
     border:.5px solid #fff;
     background:#4facff;
     border-radius:10px;
-    box-shadow:0px 0px 10px #000;
+    box-shadow:0px 0px 10px rgb(252, 251, 251);
   }
   .login-form h3 {
     text-align:left;
@@ -71,33 +79,36 @@
   }
   .login-form {
     box-sizing:border-box;
-    padding-top:15px;
-      padding-bottom:10%;
+    padding-top:40px;
+    padding-bottom:10%;
     margin:5% auto;
     text-align:center;
+    border:2px solid #6567e4;
   }
   .login input[type="text"],
   .login input[type="password"] {
     max-width:400px;
-      width: 80%;
+    height:30px;
+    width: 80%;
     line-height:3em;
     font-family: 'Ubuntu', sans-serif;
     margin:1em 2em;
     border-radius:5px;
-    border:2px solid #f2f2f2;
+    border:2px solid #6567e4;
     outline:none;
     padding-left:10px;
   }
   .login-form input[type="button"] {
     height:30px;
     width:100px;
-    background:#fff;
-    border:1px solid #f2f2f2;
+    background:rgb(137, 202, 240);
+    border:1px solid #6567e4;
     border-radius:20px;
     color: slategrey;
     text-transform:uppercase;
     font-family: 'Ubuntu', sans-serif;
     cursor:pointer;
+    
   }
   .sign-up{
     color:#f2f2f2;
@@ -130,19 +141,18 @@
   .two {
     grid-column: 2 / 2; 
   }
-  .field {
+ .field {
     border: solid 1px #ccc;
-    padding: 7px;
-    width: 280px;
+    padding: 5px;
+    width: 180px;
     margin-left: 9%;
-  
-  }
+    } 
   .btn {
     border-radius: 5px;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 7px;
     text-decoration: none;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.925);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -155,7 +165,7 @@
   }
   .btn:hover{
     transform: scale(1.05);
-    background-color: #aa5b1a;
+    background-color: #b9eff8;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
   }
@@ -189,6 +199,7 @@
   .btn-blue {
     color: white;
     background-color: #3996e2;
+    width: 10%;
   }
   
   .btn-blue:hover {

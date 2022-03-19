@@ -10,20 +10,17 @@
 
 </head>
 
-<body>
+<body class="bodylista">
     <div class="container">
         <div class="login">
             <h1>Usuarios</h1>
         </div>
         <div><br>
             <input type="text" name="busqueda" id="busqueda" class="field" placeholder="buscarUsuario" />
-            <button onclick="buscar()" class="btn btn-orange">
+            <button onclick="buscar()" class="btn btn-blue">
                 Buscar
             </button>
-
-            <button onclick="obtener()" class="btn btn-orange">
-                Mostrar todos
-            </button>
+            <a class="btn btn-blue" href="lista.html">Mostrar todos</a>
         </div>
         <div class="wrapper">
 
@@ -43,11 +40,12 @@
             </table>
 
         </div>
+    <h4><label hidden="true" id="busquedanegativa"></label></h4>
     </div>
     <script src="js/listarusuarios.js"></script>
     <script src="js/bloquearusuario.js"></script>
     <br>
-    <hr>
+    
 
 </body>
 
